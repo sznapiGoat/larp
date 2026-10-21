@@ -1,0 +1,12 @@
+Brno;Praha;2:1
+Ostrava;Plzen;0:0
+Liberec;Olomouc;3:2
+Plzen;Brno;2:3
+Praha;Ostrava;1:1
+Olomouc;Liberec;1:0
+Brno;Ostrava;1:2
+Plzen;Olomouc;2:2
+Praha;Liberec;4:0
+Plzen;Liberec;2:2
+Olomouc;Ostrava;1:0
+Praha;Brno;3:3
