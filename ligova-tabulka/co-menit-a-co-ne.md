@@ -45,3 +45,11 @@ Teď je jich 10. Sloučit jde takhle:
 | `App` | obsah `run()` přímo do `main()` |
 
 **Minimum**, které zadání chce: `Match` a `TeamStats`. Všechno ostatní může být klidně ve funkcích nebo v `main()`.
+
+Při slučování smaž oba soubory zrušené třídy (`.hpp` i `.cpp`) a uprav `#include` tam, kde se používala.
+
+## Soubory: co hlídat
+
+- Každý `.hpp` musí mít `#pragma once`.
+- Hlavička třídy, kterou jiná třída používá jako proměnnou nebo parametr, se musí includovat (`Match.hpp` includuje `Score.hpp`, `League.hpp` includuje `Match.hpp` a `TeamStats.hpp`).
+- Při kompilaci se musí předat **všechny** `.cpp` (`g++ *.cpp`), jinak linker hlásí „undefined reference“.

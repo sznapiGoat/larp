@@ -1,4 +1,21 @@
-# Jak funguje main.cpp
+# Jak funguje Ligová tabulka
+
+## Soubory
+
+Každá třída má dva soubory:
+- `Trida.hpp` obsahuje deklaraci, tedy jaké má proměnné a metody (jen hlavičky funkcí),
+- `Trida.cpp` obsahuje implementaci, tedy těla metod zapsaná jako `Trida::metoda() { ... }`.
+
+`#pragma once` v každém `.hpp` zajistí, že se hlavička nevloží dvakrát. V `.hpp` se píše `std::string`, protože `using namespace std;` do hlaviček nepatří; v `.cpp` už se používá.
+
+`main.cpp` jen vytvoří `App` a zavolá `run()`.
+
+Kompilace (všechny `.cpp` najednou), spouštět ze složky s `matches.txt`:
+
+```
+g++ *.cpp -o liga
+./liga
+```
 
 ## Pořadí volání
 
